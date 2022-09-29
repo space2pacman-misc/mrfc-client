@@ -4,9 +4,9 @@
       <Auth v-if="!isAuth" @auth="onAuth" />
       <div v-if="isAuth" class="border pt-4 pb-4 pr-3 pl-3 d-flex">
         <div class="buttons">
-          <b-button v-if="!data.allowedUserTables || data.allowedUserTables.includes('Т1')" block variant="primary" @click="getData('Т1')">Т1</b-button>
-          <b-button v-if="!data.allowedUserTables || data.allowedUserTables.includes('Т2')" block variant="primary" @click="getData('Т2')">Т2</b-button>
-          <b-button v-if="!data.allowedUserTables || data.allowedUserTables.includes('Т3')" block variant="primary" @click="getData('Т3')">Т3</b-button>
+          <b-button v-if="!data.allowedUserTables || data.allowedUserTables.includes('Т1')" block variant="primary" @click="getData('Т1')">ПМ1</b-button>
+          <b-button v-if="!data.allowedUserTables || data.allowedUserTables.includes('Т2')" block variant="primary" @click="getData('Т2')">ПМ2</b-button>
+          <b-button v-if="!data.allowedUserTables || data.allowedUserTables.includes('Т3')" block variant="primary" @click="getData('Т3')">ПМ3</b-button>
         </div>
         <b-table striped hover :items="data.fields" class="ml-3"></b-table>
       </div>
